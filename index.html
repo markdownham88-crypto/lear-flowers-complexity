@@ -118,7 +118,7 @@ header.titlepage::after{content:"\2766";position:absolute;bottom:4.5vh;left:50%;
 .kicker{letter-spacing:0.5em;text-transform:uppercase;font-size:13px;margin-bottom:34px;font-family:var(--mono);font-weight:600;color:var(--sky);text-shadow:0 0 14px rgba(90,166,224,0.5);}
 
 h1.maintitle{font-family:var(--display);font-weight:800;margin:0 0 6px;line-height:0.98;letter-spacing:-0.01em;display:flex;flex-direction:column;align-items:center;gap:2px;}
-h1.maintitle .tl1,h1.maintitle .tl2,h1.maintitle .tl3{display:block;
+h1.maintitle .tl1,h1.maintitle .tl2,h1.maintitle .tl3{display:block;line-height:1.12;padding:0.04em 0.1em 0.14em;
   background:linear-gradient(180deg,var(--bgold-glow) 0%,var(--bgold-cool) 42%,var(--sky) 100%);
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--bgold-cool);
   filter:drop-shadow(0 2px 10px rgba(90,166,224,0.45)) drop-shadow(0 0 30px rgba(236,223,142,0.25));}
@@ -127,7 +127,7 @@ h1.maintitle .tl2{font-size:clamp(40px,8.2vw,90px);}
 h1.maintitle .tl3{font-size:clamp(34px,6.0vw,64px);font-style:italic;}
 
 /* "A Complexity Approach to Change Management" — second title line, matching gold→sky lettering */
-.title-sub2{font-family:var(--display);font-weight:800;font-style:italic;font-size:clamp(24px,4.0vw,46px);margin:10px auto 30px;letter-spacing:0.002em;line-height:1.05;
+.title-sub2{font-family:var(--display);font-weight:800;font-style:italic;font-size:clamp(24px,4.0vw,46px);margin:10px auto 30px;letter-spacing:0.002em;line-height:1.3;padding:0.08em 0.12em 0.22em;
   background:linear-gradient(180deg,var(--bgold-glow) 0%,var(--bgold-cool) 40%,var(--sky) 100%);
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--bgold-cool);
   filter:drop-shadow(0 2px 9px rgba(90,166,224,0.4)) drop-shadow(0 0 26px rgba(236,223,142,0.22));}
@@ -261,7 +261,9 @@ blockquote.quarto cite{display:block;margin-top:14px;font-style:normal;font-size
 
 /* INLINE EMPHASIS — lead-in / term / keystone */
 .lead-in{font-style:italic;color:var(--indigo);font-weight:600;}
-.term{font-style:normal;font-weight:700;color:var(--teal-deep);border-bottom:1.5px dotted var(--teal);}
+.term{font-style:normal;font-weight:700;color:var(--teal-deep);}
+.hot{font-weight:700;font-style:normal;color:var(--rose);background:linear-gradient(180deg,transparent 62%,rgba(215,107,154,0.22) 62%);padding:0 1px;}
+.lit{font-style:italic;color:var(--indigo);font-weight:600;}
 .keystone{display:block;margin:34px auto;max-width:90%;text-align:center;font-family:var(--display);
   font-size:24px;line-height:1.42;font-weight:700;color:#eaf1ff;padding:26px 32px;border-radius:14px;
   background:linear-gradient(150deg,var(--blue),var(--indigo-deep) 70%,var(--magenta));
@@ -716,6 +718,8 @@ footer{text-align:center;padding:58px 26px 90px;color:var(--faded);font-size:16p
 
 <p><span class="term">Fumitory</span> (<em>fumiter</em>) takes its name from <em>fumus terrae</em>, smoke of the earth &mdash; a plant the herbalists said sprang from vapour rather than seed, appearing on broken ground as if from nowhere. It is the perfect emblem of <span class="term">emergence</span>: order that arises without visible cause, from the disturbed soil, exactly where the cultivated order has been overturned. <span class="term">Burdock</span> (<em>hardokes</em>) is the great clinging colonist, its burrs the original model for hooked attachment, spreading by fastening itself to whatever passes &mdash; the opportunist that thrives precisely on movement and disturbance, the way the shadow system propagates through the informal contacts the org chart never maps. <span class="term">Nettles</span> are the classic indicator of ground enriched by collapse &mdash; they flourish on the nitrogen released where structures have rotted, the sting that marks the site of a fallen order; in ecological survey, a stand of nettles is a sign that something here was once built and has since broken down. <span class="term">Cuckoo-flower</span>, the lady's-smock of the wet meadow, blooms at the threshold of seasons, named for the bird whose call marks a turning point &mdash; the flower of transition, of the liminal moment between one regime and the next, which is the only moment in which genuine change can occur.</p>
 
+</div>
+
 <div class="source-quote">At the edges, where one habitat meets another, biological diversity and productivity reach their maximum &mdash; the edge effect. It is at the margins, not the secure centre, that the most life, and the most novelty, is found.<span class="sq-src">— after the ecological principle invoked in Cameron &amp; Green, Making Sense of Change Management</span></div>
 
 <p>And then the two that carry the play's darkest knowledge. <span class="term">Hemlock</span> and <span class="term">darnel</span> are not merely weeds but <em>poisons</em> &mdash; hemlock the killer of Socrates, darnel the grass whose seed, infected with its symbiotic fungus, brings on staggering and delirium, the &ldquo;infelice lolium&rdquo; the ancients blamed for madness in those who ate bread baked from contaminated grain. Their presence in the crown is the play telling a truth the optimistic change literature often suppresses: that what grows at the edge of a collapsed order is not all benign. Emergence is not a synonym for improvement. The same disturbed ground that produces the pioneer and the threshold-bloom produces also the poison and the intoxicant; the self-organising field throws up the toxic with the vital, indiscriminately, because it answers to no values but its own propagation. This is the hard heart of the complexity approach to change, and Shakespeare states it botanically: the crown that grows when the king stops gardening contains hemlock <em>and</em> cuckoo-flower, the deadly and the renewing, mixed in a single circle, because a system at the edge of chaos is generative and dangerous in the same breath, and there is no decree that can sort the one from the other in advance.</p>
@@ -725,11 +729,13 @@ footer{text-align:center;padding:58px 26px 90px;color:var(--faded);font-size:16p
 <span class="aphorism">The weeds were always in the sustaining corn, held down only by the plough; the crown of flowers is what the field becomes the moment the king admits he was never growing the order, only suppressing the wild.</span>
 
   <span class="aphorism">The foster-nurse of nature is repose: a broken system is not mended by the wisdom applied to it from above, but by the conditions of rest under which it remembers how to mend itself.</span>
-</div>
+
 
 <div class="complexity-coda">
   <span class="cc-label">Complexity Coda &middot; I<small>c</small></span>
   <p>This part has read the primary theme &mdash; the flower-crowning itself &mdash; line by line through the actual text, and found in Lear's own speeches a complexity science the management literature is still catching up to. &ldquo;Nature's above art&rdquo; states the precedence of the emergent over the designed. &ldquo;The art of our necessities is strange, that can make vile things precious&rdquo; states the creativity of constraint, the productivity of the edge. &ldquo;Off, off, you lendings!&rdquo; enacts the movement from the insulated centre to the exposed edge. &ldquo;Take physic, pomp; expose thyself&rdquo; prescribes that exposure as the cure for power's pathology. And the self-uncrowning &mdash; &ldquo;Lear takes off his crown of weeds and flowers&rdquo; &mdash; states that no pattern at the edge is ever worn for long. The wager of this entire treatise is concentrated here: that <em>King Lear</em> is not a tragedy onto which a complexity reading must be imported from outside, but a play that already knew, four centuries before Santa Fe, that nature is above art, that necessity is the strangest artist, that the truth is told only at the exposed edge, and that the crown the storm gives is a crown the wearer must, in the end, take off himself.</p>
+
+</div>
 
 <div class="edge-note">
   <span class="en-tag">The crown of weeds is a dissipative structure</span>
@@ -737,7 +743,7 @@ footer{text-align:center;padding:58px 26px 90px;color:var(--faded);font-size:16p
   <span class="aphorism">For a living system, equilibrium is death; the king's gold crown was a structure at rest, and only the crown of weeds, sustained by the storm's flux, was ever truly alive.</span>
 </div>
 
-</div>
+
 
 </section>
 
@@ -1139,6 +1145,8 @@ footer{text-align:center;padding:58px 26px 90px;color:var(--faded);font-size:16p
 <div class="complexity-coda">
   <span class="cc-label">Complexity Coda &middot; V</span>
   <p>Kozintsev's collectivised Lear replaces individual majesty with the land's own population of refugees and fools; Kurosawa transposes the heath onto the Sengoku battlefield's total social collapse. Both directorial choices read Lear's personal undoing as inseparable from a wider systemic one, and this is precisely the methodological move complex responsive processes asks of anyone analysing organisational change: that the individual leader's crisis never be treated in isolation from the web of relationships and local interactions actually constituting the system around them. A change initiative that locates the entire drama in the departing or arriving executive — the corn-king model the previous part's coda criticised — repeats the error Brook's more psychologically intimate staging risks and Kozintsev's wide-screen, populated heath corrects: it mistakes a single figure's story for the whole system's story, when the whole system, like Kozintsev's refugees, was already moving long before and will keep moving long after that figure's personal scene has ended.</p>
+</div>
+
 <div class="edge-note">
   <span class="en-tag">Figuration &middot; the system, not the sovereign</span>
   <p>Kozintsev fills the screen with the dispossessed because he intuited what Elias would insist on and Shaw would build a practice around: that the unit of the drama is never the isolated sovereign but the whole figuration of interdependent people whose shifting balances of power constitute the only reality there is. Lear alone is a psychological case; Lear-in-the-figuration &mdash; refugees streaming across the steppe, the kingdom's whole web of relating reorganising around his fall &mdash; is a study in self-organising change. This is the same correction the emergent-change literature makes against the heroic-leader story: change, Aitken and Higgs found in their study of a hundred change narratives, &ldquo;can start anywhere in the system,&rdquo; and most often starts at the periphery, the front line, the edge where the organism meets its world &mdash; which is to say it starts among Kozintsev's refugees, not in the throne room the camera keeps leaving behind.</p>
@@ -1147,7 +1155,7 @@ footer{text-align:center;padding:58px 26px 90px;color:var(--faded);font-size:16p
 
 
   <p>Elias's figurational sociology was developed, not incidentally, partly through his own historical studies of court society — the dense, intricately ranked, perpetually anxious figuration surrounding an absolute monarch, in which every gesture's meaning depends on a constantly shifting calculus of precedence Elias traces in granular historical detail. Kozintsev's collectivised reading of Lear, populating the screen with refugees and fools rather than isolating the king's psychology, is in effect an Eliasian rather than a purely psychological reading before complex responsive processes theory existed to name it as such: the king's fall is legible only as a shift in the entire court figuration's power-ratios, not as an isolable individual event. Change programmes that locate an organisational crisis entirely within a departing executive's individual failings, rather than within the wider figuration's shifting balance of interdependence that both produced and outlived that executive's tenure, are choosing Brook's more intimate, individually-centred frame when the situation, like Kozintsev's wide screen, actually requires the figurational one.</p>
-</div>
+
 
 
 <div class="complexity-coda">
@@ -1331,6 +1339,8 @@ footer{text-align:center;padding:58px 26px 90px;color:var(--faded);font-size:16p
 <div class="complexity-coda">
   <span class="cc-label">Complexity Coda &middot; IX</span>
   <p>Foucault's clinical gaze sorts, categorises, and diagnoses from a position of presumed objectivity outside the phenomenon it observes — precisely the stance most change-management methodology asks its consultants and sponsoring executives to occupy: diagnose the organisation's dysfunction, prescribe the appropriate intervention, monitor compliance with the treatment plan. Stacey and Mowles's complex responsive processes tradition mounts, in effect, a Foucauldian objection to this entire posture: there is no clinical position outside the organisational system from which an observer could diagnose it without already being one of the local interactions constituting it. The consultant administering the change diagnosis is never standing where Diamond's camera or Charcot's lecture-hall audience stood, however much the engagement letter implies otherwise; they are already inside the field of relationships their diagnosis claims to describe from outside, and the costume of clinical objectivity this part traced onto Lear's asylum photography is, on this reading, as available to the modern change practitioner as it ever was to the nineteenth-century alienist.</p>
+</div>
+
 <div class="edge-note">
   <span class="en-tag">There is no programmer &middot; the gaze from nowhere</span>
   <p>The clinical gaze claims the one position complexity science says no participant can occupy: outside the system, parameters in hand, the programmer who sets the conditions and is not himself set by them. Patricia Shaw's most radical move is to deny this position to everyone &mdash; consultant, physician, change leader, king. In the Santa Fe simulations there was a programmer holding the edge-of-chaos conditions steady from outside; &ldquo;in human interaction,&rdquo; Shaw writes, &ldquo;we can have no analogy for the programmer.&rdquo; Diamond's camera and Charcot's lecture-hall stage the fantasy of the external observer; the change consultant's diagnostic framework restages it in a boardroom. But there is no outside. The alienist is in the ward; the consultant is in the figuration; Lear discovers on the heath that there was never a dry vantage from which to watch the storm &mdash; only the storm, and the question of who you turn out to be inside it.</p>
@@ -1339,7 +1349,7 @@ footer{text-align:center;padding:58px 26px 90px;color:var(--faded);font-size:16p
 
 
   <p>Stacey's account of organisations as figurations constituted by power relations rather than as systems available to neutral external diagnosis draws directly on Elias's insistence that power is "polymorphous" — many-sided, inherent in every relationship, never the simple possession of one party over another. The Foucauldian clinical gaze this part traces through asylum photography assumes the opposite: a diagnostician positioned outside the power relations of the ward, able to observe and categorise from a vantage the patient's own position cannot occupy. Elias's polymorphous power, like Stacey's complex responsive processes, denies any participant — consultant, executive, facilitator — this fully external vantage; the change practitioner administering a diagnosis is one more node in the figuration's fluctuating power-balance, not a camera mounted safely outside it, and the costume of clinical objectivity this part traced onto Lear's asylum photography survives, on this account, only by suppressing its own position within the very power relations it claims merely to observe.</p>
-</div>
+
 
 </section>
 
@@ -1623,13 +1633,15 @@ footer{text-align:center;padding:58px 26px 90px;color:var(--faded);font-size:16p
   <p>Prose breaking into verse, this part showed, functions as a linguistic costume change exactly parallel to the weed-crown's sartorial one — Lear's collapse registers in form as much as in content, the controlled rhetoric of the play's opening scene giving way to the fractured, prose-heavy speech of the heath. Bond's brutal inheritance of this collapse, staged with even less mercy than Shakespeare allowed himself, supplies a useful caution against any change-management language that imagines a transformation's success can be read off its official communications alone. Organisations under genuine strain develop their own equivalent of prose breaking into verse and back again — the carefully metred language of the strategy deck giving way, in the actual meetings where decisions get made, to something far rougher, far less composed, far closer to Lear's own broken syntax on the heath. Stacey's complex responsive processes tradition takes this rougher, off-register speech to be where the organisation's real sense-making is happening, not a regrettable lapse from the composed register of the official deck.</p>
 
   <p>Mead's account of gesture finds its linguistic register here: prose breaking into verse and back again is not mere formal ornament but a shift in the very medium through which gesture and response can occur, verse's heightened, metred register permitting certain kinds of exchange (formal address, ceremonial claim) that collapse once the metre itself collapses into Lear's broken prose. Stacey's complex responsive processes tradition pays unusually close attention to exactly this kind of register-shift in organisational conversation — the gap between the metred, composed language of the strategy document and the rougher, unmetred prose of the meeting where the actual decision gets made — treating the shift itself, rather than either register alone, as diagnostic of where an organisation's real sense-making is currently happening.</p>
+</div>
+
 <div class="edge-note">
   <span class="en-tag">Bounded instability &middot; the form that melts</span>
   <p>Verse breaking into prose is the play melting its own lattice in real time. Blank verse is the legitimate system's frozen order &mdash; metred, ceremonial, the controlled rhetoric of a court that knows its own rules; prose on the heath is the thaw, the edge of chaos rendered as syntax, &ldquo;solid melting at the edges while what seems shapeless gains form.&rdquo; Shaw's complexity approach listens for exactly this register-shift in organisational talk &mdash; the moment the metred language of the strategy deck gives way, in the meeting where decisions actually get made, to the rougher, truer, unmetred prose of people thinking aloud together. The shift is the data. When an organisation's speech breaks form, it is not failing; it is thawing, and whatever it is about to become is forming in the broken syntax, not the smooth.</p>
   <span class="aphorism">When the verse breaks into prose, the system has begun to thaw &mdash; listen there.</span>
 </div>
 
-</div>
+
 
 </section>
 
@@ -1669,13 +1681,15 @@ footer{text-align:center;padding:58px 26px 90px;color:var(--faded);font-size:16p
   <p>The twenty-first-century stage's casting crisis around Lear's scene — how to stage indiscriminate, category-collapsing madness honestly without either sanitising it or making spectacle of an actor's body — has a precise organisational equivalent in the perennial difficulty of staging a change programme's actual, undignified uncertainty without either pretending to a confidence the leadership team does not feel or tipping into a public display of organisational panic that itself becomes destabilising. Stacey's account of anxiety in organisational life suggests both failure modes are available to any change-communications function at any moment, and that the harder, more honest path — analogous to the productions this part praised for neither flinching from nor sensationalising Lear's collapse — lies in finding language for genuine uncertainty that neither performs false certainty nor abandons the organisation to unstructured dread. This is, in Stacey's vocabulary, the core skill of holding anxiety at a productive level: enough to motivate engagement with the actual difficulty, not so much as to produce the defensive routines — denial, scapegoating, frantic premature closure — that anxiety beyond a certain threshold reliably generates.</p>
 
   <p>Stacey's account of anxiety as a necessary, productively managed feature of organisational life rather than a symptom to be eliminated supplies the missing third term in this part's casting-crisis dilemma. Neither false confidence nor unstructured panic; what Stacey's framework asks for is anxiety held at what he calls a productive level — enough to motivate genuine engagement with an actual difficulty, not so much as to trigger the defensive routines (denial, scapegoating, premature closure) anxiety beyond a certain threshold reliably produces. This is, in effect, the same calibration a director must find in staging Lear's own category-collapsing madness: neither sanitised into manageable pathos nor sensationalised into unwatchable spectacle, but held, like productive organisational anxiety, at the level where its genuine difficulty remains visible without becoming either denied or overwhelming.</p>
+</div>
+
 <div class="edge-note">
   <span class="en-tag">Anxiety &middot; the temperature of the thaw</span>
   <p>Anxiety, in Stacey's complexity account, is not a malfunction to be eliminated but the felt temperature of a system near its edge &mdash; too little and it freezes into complacent order, too much and it boils into the defensive routines (denial, scapegoating, the frantic grab for premature closure) that dissolve a group's capacity to think. The director staging Lear's madness must hold exactly this temperature: enough disturbance that the scene's genuine difficulty stays visible, not so much that it tips into spectacle or sanitised pathos. So must the change leader, who is, in Shaw's phrase, working live &mdash; sustaining &ldquo;sufficient spontaneity&rdquo; against the anxiety that would otherwise freeze the room solid. The skill is not the elimination of anxiety but its <em>tuning</em>, and there is no thermostat outside the system to do the tuning for you.</p>
   <span class="aphorism">Freeze and the system dies; boil and it dies; the art is to hold it exactly at the thaw.</span>
 </div>
 
-</div>
+
 
 </section>
 
@@ -2080,15 +2094,15 @@ footer{text-align:center;padding:58px 26px 90px;color:var(--faded);font-size:16p
 <div class="complexity-coda">
   <span class="cc-label">Complexity Coda &middot; XXV</span>
   <p><em>Shì</em> — strategic configuration, the shape of a situation determining which moves become available within it — reads Lear's opening catastrophe not as a single bad decision but as a positional collapse, the love-test changing the entire board's configuration before a single subsequent move is made. This is close to the single most important corrective complex responsive processes theory offers standard change-management practice: that an organisation's "strategy" is never simply a plan some authority chooses and then executes, but a configuration — a <em>shì</em> — continuously being remade by the accumulated local interactions of everyone inside it, such that the same announced plan can land as triumph or catastrophe depending entirely on the configuration it lands into. Sun Tzu's strategist reads the weiqi board's shape before placing a stone, knowing the board's existing configuration constrains what any single stone can accomplish; the complexity-literate change practitioner reads the organisation's existing configuration of relationships and accumulated history the same way, knowing that the identical change announcement, dropped onto a different configuration, will simply not do the same thing twice.</p>
+</div>
+
 <div class="edge-note">
   <span class="en-tag">Shi &middot; the field decides the move</span>
   <p><em>Shi</em> &mdash; the configuration of forces that determines, before any stone is placed, which moves are even available &mdash; is the classical Chinese name for what complexity calls the system's state and what Shaw calls the power figuration: a shape no single player authors and every player is inside. The love-test is a catastrophic misreading of <em>shi</em>. Lear believes he is making a free, sovereign move &mdash; dividing the kingdom on terms he sets &mdash; when in fact the configuration he has already created (two daughters who have learned that love here means performance, a third who refuses the lesson, a court that rewards fluency over truth) has foreclosed his options before he speaks. He plays as though he stands outside the board, placing stones; he is a stone. The change leader who reads <em>shi</em> knows the announcement will land not as written but as the existing configuration permits &mdash; that the same plan dropped onto a different figuration simply does not do the same thing twice.</p>
   <span class="aphorism">The amateur plays the move; the master plays the configuration that decides which moves exist.</span>
 </div>
 
-
-  <p>Sun Tzu's <em>shì</em> and Elias's figuration name, from two entirely separate civilisational starting points, structurally similar objects: a configuration of relative position and power that determines, prior to any single move, what moves are even available to the actors embedded within it. Stacey's own deployment of complexity theory by analogy rather than by direct transposition mirrors the methodological caution both Sun Tzu's strategist and Elias's sociologist share: the weiqi board's <em>shì</em> and the court's figuration are read, not engineered from outside, by an actor who remains, crucially, one more piece on the board rather than a player positioned safely beyond it — which is precisely the position no change-management consultant, however senior, is ever actually able to occupy with respect to the organisation whose <em>shì</em> they have been engaged to read.</p>
-</div>
+<p>Sun Tzu's <em>shì</em> and Elias's figuration name, from two entirely separate civilisational starting points, structurally similar objects: a configuration of relative position and power that determines, prior to any single move, what moves are even available to the actors embedded within it. Stacey's own deployment of complexity theory by analogy rather than by direct transposition mirrors the methodological caution both Sun Tzu's strategist and Elias's sociologist share: the weiqi board's <em>shì</em> and the court's figuration are read, not engineered from outside, by an actor who remains, crucially, one more piece on the board rather than a player positioned safely beyond it — which is precisely the position no change-management consultant, however senior, is ever actually able to occupy with respect to the organisation whose <em>shì</em> they have been engaged to read.</p>
 
 </section>
 
@@ -2167,6 +2181,8 @@ footer{text-align:center;padding:58px 26px 90px;color:var(--faded);font-size:16p
 <div class="complexity-coda">
   <span class="cc-label">Complexity Coda &middot; XXVII</span>
   <p>The Anthropocene reading of Lear's heath — Agamben's bare life and Schmitt's sovereignty read through a storm that no longer recognises any human claim to special exemption from the natural world's indifference — extends "unaccommodated man" into a register where the entire premise of human institutional control is in question, not merely one king's grip on it. Change-management practice rarely operates at this scale, but the scale shift is instructive: most transformation programmes assume an environment that, while uncertain, remains fundamentally accommodating of organisational will, a stable ground against which the change can be planned. Stacey's edge-of-chaos literature, and the ecological turn in recent organisational scholarship this part surveys, both suggest that the more honest starting assumption, increasingly, is closer to Lear's heath: an environment whose accommodation cannot be taken for granted at any scale, in which organisations are not exempt observers of disruption but, like the unaccommodated king himself, simply one more body exposed to weather, market, and climate systems considerably larger and less negotiable than any single strategy document anticipates.</p>
+</div>
+
 <div class="edge-note">
   <span class="en-tag">Dissipative structures &middot; order bought from the storm</span>
   <p>Prigogine's deepest finding was that genuine order &mdash; the kind that can grow, adapt, surprise itself &mdash; arises only in systems held far from equilibrium by continuous exchange with an environment that owes them nothing. Comfort is entropy; the sheltered system, the over-accommodated organisation, winds slowly down toward the heat-death of pure repetition. Lear's &ldquo;unaccommodated man,&rdquo; stripped on the heath to &ldquo;the thing itself,&rdquo; is a dissipative structure in the instant of its formation: a self that can only emerge once the insulation of the court &mdash; its robes, its flatterers, its frozen certainties &mdash; has been torn away and the raw weather let in. The Anthropocene reading and the complexity reading converge on a single hard truth: there is no order worth having that does not have to be paid for, continuously, in exposure to a storm that was never on anyone's side.</p>
@@ -2175,7 +2191,7 @@ footer{text-align:center;padding:58px 26px 90px;color:var(--faded);font-size:16p
 
 
   <p>Prigogine's dissipative structures, the conceptual ancestor of this treatise's edge-of-chaos vocabulary throughout, were developed precisely to explain how genuinely novel order can emerge in systems held far from equilibrium by continuous exchange with an indifferent surrounding environment — a description that fits the Anthropocene reading of Lear's heath with unusual precision. The heath does not accommodate Lear's claim to special exemption from its indifference, any more than a dissipative structure's surrounding thermodynamic environment accommodates the structure's own internal organisation; both persist only by continuous, unprivileged exchange with forces holding no special regard for the structure's survival. An organisation that imagines itself exempt from this condition — assuming a stable, accommodating external environment against which planned change can be safely executed — is, on Prigogine's physics and this part's ecocritical reading alike, simply mistaken about the kind of system it actually is.</p>
-</div>
+
 
 </section>
 
@@ -2426,13 +2442,15 @@ footer{text-align:center;padding:58px 26px 90px;color:var(--faded);font-size:16p
   <p>Sherman's clown self-portraits stage costume and identity as inseparable, the artist becoming, rather than merely depicting, the licensed fool she photographs. The fool's structural position — sanctioned to say what official propriety forbids, protected by costume rather than by rank — has an organisational equivalent that Stacey's complex responsive processes tradition takes seriously rather than treating as mere comic relief: every functioning organisation needs someone occupying something like the fool's licensed position, able to name the unwelcome truth about a change programme's actual prospects precisely because their position carries no formal authority for anyone to defend against. Change programmes that quietly eliminate this role — that treat dissenting candour as a discipline problem rather than as the organisational equivalent of Lear's own Fool, whose protected truth-telling the king needed considerably more than he needed his daughters' flattery — remove exactly the mechanism most likely to have warned them, in time, of the catastrophe building in Act One.</p>
 
   <p>Mead's account of the self as constituted through taking up "the attitude of the generalised other" — internalising, in order to act at all, some working sense of how one's gestures will be received by the wider community one addresses — supplies a precise theoretical account of what licensed fool-status actually grants its holder: not freedom from the generalised other's judgement, but a specifically modified relationship to it, in which certain gestures are pre-categorised by social convention as exempt from the consequences they would otherwise provoke. Sherman's clown self-portraits stage this modified relationship directly, the artist occupying the licensed position Mead's theory describes structurally. Stacey's complex responsive processes tradition asks every organisation to maintain at least one such modified relationship to its own generalised other — someone whose dissenting gesture carries this same structural exemption — precisely because a figuration with no licensed fool has no channel left for the gesture-response loop to carry unwelcome but necessary information back up through.</p>
+</div>
+
 <div class="edge-note">
   <span class="en-tag">The Fool's franchise &middot; reality testing</span>
   <p>Kets de Vries built an entire theory of organisational health on the figure Sherman photographs and Lear employed: the sage-fool as &ldquo;countervailing power against the regressive forces inherent in leadership,&rdquo; the licensed irreverent whose jokes are the leader's last reliable instrument of <em>reality testing</em>. A king surrounded only by fluent flatterers has lost the capacity to know what is true; the Fool, alone permitted to insult him without consequence, is the one feedback channel the legitimate system cannot corrupt &mdash; which is precisely why George Bernard Shaw's despot needs &ldquo;one disloyal subject to keep him sane.&rdquo; Lear's catastrophe is a feedback catastrophe: he banishes his two unsalaried fools and is left with the licensed one, who tells the truth too late. The organisation that treats its contrarians as a discipline problem is not tidying itself; it is severing the nerve that tells it whether it is still in contact with reality.</p>
   <span class="aphorism">The flatterer tells the king what he wants; the fool tells him what is true; only one of them keeps him sane.</span>
 </div>
 
-</div>
+
 
 </section>
 
@@ -2465,13 +2483,15 @@ footer{text-align:center;padding:58px 26px 90px;color:var(--faded);font-size:16p
   <p>Kiefer's scorched-field paintings render national ruin through straw, ash, and dried flowers worked directly into the canvas's surface, materials whose physical decay over time becomes part of the work's continuing meaning rather than a conservation problem to be arrested. The willingness to let the material itself keep changing after the work is notionally finished offers a useful closing image for how Stacey's complex responsive processes tradition asks organisations to think about the supposed end-state of any change programme: not a fixed, conserved, henceforth-unchanging new structure, but a living material — straw, ash, the organisation's own ongoing pattern of relating — that will keep decaying, recombining, and finding new configurations long after the change programme's official closure date, exactly as Kiefer's straw keeps settling and his flowers keep further drying inside paintings already decades old. To demand that an organisational change "stick" in the sense of remaining permanently fixed is to misunderstand the material in roughly the way a conservator who tried to arrest Kiefer's straw at a single moment of decay would misunderstand the work.</p>
 
   <p>Prigogine's dissipative structures persist only through continuous exchange of matter and energy with their environment, never settling into a final, conserved state; Kiefer's straw and ash, worked directly into canvases that continue physically decaying and recombining decades after their first exhibition, are this treatise's most literal demonstration of a dissipative structure's logic applied to visual art rather than to thermodynamics. Stacey's resistance to imagining any organisational change as arriving at a final, permanently fixed new structure draws on exactly this physics: an organisation that has genuinely changed has not acquired a new conserved state but a new, still-dissipating pattern of exchange with its environment, continuing to recombine and resettle long after the change programme's official closure date, exactly as Kiefer's straw keeps settling inside paintings the gallery insists, for conservation purposes, on treating as finished.</p>
+</div>
+
 <div class="edge-note">
   <span class="en-tag">No refreezing &middot; the work that keeps moving</span>
   <p>Kiefer lets the straw keep falling and the paint keep cracking because he refuses the conservator's fantasy &mdash; the same fantasy Kurt Lewin built into the word <em>refreeze</em>. There is no final state. A dissipative structure does not finish; it persists by continuing to exchange, recombine, resettle, exactly as Kiefer's surfaces go on decaying inside galleries that insist on calling them done. The emergent-change researchers found the same thing empirically and even inverted Lewin's sequence to say it: not unfreeze-change-refreeze but freeze-adjust-<em>unfreeze</em> &mdash; the goal of change is not a new frozen shape but the restoration of the system's capacity to keep moving. To demand that an organisational change &ldquo;stick&rdquo; in the sense of holding permanently still is to misunderstand the material as badly as a curator who tried to arrest Kiefer's straw at a single chosen instant of its fall.</p>
   <span class="aphorism">There is no refreezing; the only durable change is the recovered capacity to keep changing.</span>
 </div>
 
-</div>
+
 
 </section>
 
